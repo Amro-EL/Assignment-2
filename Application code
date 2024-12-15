@@ -89,6 +89,14 @@ class Application:
 
             print(x)
 def main(self):
+    product_code = self.get_user_input(
+
+        "Enter your Product Code (100-1000): ", 
+
+        lambda x: int(x) if 100 <= int(x) <= 1000 else (_ for _ in ()).throw(ValueError("Invalid Product Code."))
+
+    )
+    
 
    
 
