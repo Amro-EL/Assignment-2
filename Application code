@@ -9,7 +9,7 @@ class Product:
        self.total_units_sold = 0  
        self.total_units_manufactured = 0 
        self.total_units_sold = 0  
-      self.estimated_production = estimated_production
+       self.total_units_manufactured = 0 
 
       units_sold = max(0, min(self.stock_level, self.estimated_monthly_units + random.randint(-10, 10)))
 
