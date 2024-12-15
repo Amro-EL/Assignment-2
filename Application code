@@ -8,5 +8,7 @@ class Product:
        self.estimated_monthly_units = m_units
        self.total_units_sold = 0  
        self.total_units_manufactured = 0 
+       self.total_units_sold = 0  
+       self.total_units_manufactured = 0 
        
 
