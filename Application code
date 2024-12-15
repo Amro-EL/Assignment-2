@@ -26,4 +26,9 @@ class Product:
       statement += f"Sale Price: {self.sale_price}\n"
       statement += f"Manufacture Cost: {self.manufacture_cost}\n"
       statement += f"Initial S:\n")
-      
+      class Application:
+       def init(self): self.product = None
+       
+
+
+
