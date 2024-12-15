@@ -17,4 +17,6 @@ class Product:
        self.stock_level += self.estimated_monthly_units - units_sold
        def calculate_net_profit(self):
         return (self.total_units_sold * self.sale_price) - (self.total_units_manufactured * self.manufacture_cost) 
-       
+       def generate_stock_statement(self): 
+        statement = f"Product Code: {self.code}\n"
+        
