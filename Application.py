@@ -15,9 +15,17 @@ class Product:
         self.total_units_sold += units_sold
         self.total_units_manufactured += self.estimated_monthly_units
         self.stock_level += self.estimated_monthly_units - units_sold
+    
     def calculate_net_profit(self):
         revenue = self.total_units_sold * self.sale_price
         costs = self.total_units_manufactured * self.manufacture_cost
         net_profit = revenue - costs
         return net_profit
 
+    def generate_statement(self):
+        statement = ""
+        statement += f"Product Name: {self.name}\n"
+        statement += f"Sale Price: {self.sale_price}\n"
+        statement += f"Manufacture Cost: {self.manufacture_cost}\n"
+        statement += f"Initial Stock: {self.stock_level}\n"
+        return statement

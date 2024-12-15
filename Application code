@@ -19,4 +19,7 @@ class Product:
         return (self.total_units_sold * self.sale_price) - (self.total_units_manufactured * self.manufacture_cost) 
        def generate_stock_statement(self): 
         statement = f"Product Code: {self.code}\n"
-        
+        def generate_stock_statement(self): 
+       def generate_statement(self):
+        print("\nPredicted Stock Statement")
+        print("Product Code:", self.product.product_code)
