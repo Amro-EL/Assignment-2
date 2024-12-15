@@ -21,4 +21,9 @@ class Product:
         statement = f"Product Code: {self.code}\n"
         def generate_stock_statement(self): 
          def generate_statement(self):
-          
+          statement = f"Product Code: {self.code}\n"
+      statement += f"Product Name: {self.name}\n"
+      statement += f"Sale Price: {self.sale_price}\n"
+      statement += f"Manufacture Cost: {self.manufacture_cost}\n"
+      statement += f"Initial S:\n")
+      
