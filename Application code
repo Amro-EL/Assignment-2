@@ -124,7 +124,13 @@ estimated_production = self.get_user_input(
         lambda x: int(x) if int(x) >=0 else_ (_ for _ in ()).throw(ValueError("Invalid Production Value."))
 
     )
+product = Product(product_code, product_name, sale_price, manufacture_cost, stock_level, estimated_production)
 
+monthly_stock, total_amount_sold_units= product.simulate_monthly_stock()
+
+statement = PredictedStockStatement(product, monthly_stock, total_amount_sold_units)
+
+statement.generate_statement()
 
 
    
