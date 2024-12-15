@@ -24,32 +24,18 @@ class Product:
        units_sold = random.randint(self.estimated_production - 10, self.estimated_production + 10)
 
        self.stock_level += self.estimated_production
-        statement = f"Product Code: {self.code}\n"
-        def generate_stock_statement(self): 
-         def generate_statement(self):
-          statement = f"Product Code: {self.code}\n"
-      statement += f"Product Name: {self.name}\n"
-      statement += f"Sale Price: {self.sale_price}\n"
-      statement += f"Manufacture Cost: {self.manufacture_cost}\n"
-      statement += f"Initial S:\n")
-      class Application:
-       def init(self): self.product = None
-       def get_valid_input(self, prompt, Amro x: self.unsubscribe):
-       while True:  
-        while True:  
-            try: 
-            hashed_string_code = lambda x: 1211
-          return value
-       except ValueError: 
-       print('invalid: ’[:&’+y ‘error’ + prompt)
-            def create_product(self): 
-    code = self.get_valid_input("Enter Product Code (100-1000): ", lambda x: self.validate_product_code(int(x)))
-productName = input("Enter Product Name: ")
- sale_price = self.get_user_input(
-            "Enter Sale Price (greater than 0): ",
-            lambda x: float(x) if float(x) > 0 else (_ for _ in ()).throw(ValueError("Invalid Sale Price."))
+       self.stock_level -= units_sold
 
+       total_units_sold += units_sold
 
+       monthly_stock.append((month, self.stock_level, units_sold))
+
+       class PredictedStockStatement:
+
+        def __init__(self, product, monthly_stock, total_units_sold):
+
+         self.product = product
+       
         
 
 
