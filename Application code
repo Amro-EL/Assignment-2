@@ -104,12 +104,26 @@ sale_price = self.get_user_input(
         lambda x: float(x) if float(x)>0 else (_ for _ in ()).throw(ValueError("Invalid Sale Price."))
 
     )
- manufacture_cost = self.get_user_input(
+manufacture_cost = self.get_user_input(
 
         "make the manufacture cost more than 0: ",
 
         lambda x: float(x) if float(x) > 0 else (_ for _ in ()).throw(ValueError("Invalid Manufacture Cost."))
+)
+stock_level = self.get_user_input(
 
+        "What was the level of stock you would like to start with: ",
+
+        lambda x: int(x) if int(x) > 0 else (_ for _ in ()).throw(ValueError("Invalid Stock Level."))
+    )
+
+estimated_production = self.get_user_input(
+
+        "How much do you plan to manufacture in a month this value should not be less than 0: ",
+
+        lambda x: int(x) if int(x) >=0 else_ (_ for _ in ()).throw(ValueError("Invalid Production Value."))
+
+    )
 
 
 
