@@ -13,14 +13,17 @@ class Product:
 
     self.stock_level = stock_level
 
-    self.estimated_production = estimated_production
-      def simulate_month(self):
-       units_sold = max(0, min(self.stock_level, self.estimated_monthly_units + random.randint(-10, 10))) 
-       self.total_units_manufactured += self.estimated_monthly_units
-       self.stock_level += self.estimated_monthly_units - units_sold
-       def calculate_net_profit(self):
-        return (self.total_units_sold * self.sale_price) - (self.total_units_manufactured * self.manufacture_cost) 
-       def generate_stock_statement(self): 
+    def simulate_monthly_stock(self):
+
+     monthly_stock = []
+
+    total_units_sold = 0
+
+    for month in range(1, 13):
+
+       units_sold = random.randint(self.estimated_production - 10, self.estimated_production + 10)
+
+       self.stock_level += self.estimated_production
         statement = f"Product Code: {self.code}\n"
         def generate_stock_statement(self): 
          def generate_statement(self):
