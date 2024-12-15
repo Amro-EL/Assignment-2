@@ -6,4 +6,7 @@ class Product:
        self.manufacture_cost = export_price
        self.stock_level = stock
        self.estimated_monthly_units = m_units
+       self.total_units_sold = 0  
+       self.total_units_manufactured = 0 
+       
 
