@@ -28,7 +28,8 @@ class Product:
       statement += f"Initial S:\n")
       class Application:
        def init(self): self.product = None
-       
+       def get_valid_input(self, prompt, Amro x: self.unsubscribe):
+
 
 
 
