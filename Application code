@@ -65,10 +65,8 @@ def generate_statement(self):
 
     print("Estimated Monthly Production:", self.product.estimated_production)
 
-    print("\nMonthly Stock Details:")
-
-    print("Month\tStock Level\tUnits Sold")
-
+    statement = f"Product Code: {self.code}\n"
+    statement += f"Product Name: {self.name}\n"
         
 
 
