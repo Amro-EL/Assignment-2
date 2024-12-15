@@ -11,4 +11,6 @@ class Product:
        self.total_units_manufactured = 0 
        self.total_units_sold = 0  
        self.total_units_manufactured = 0 
-     
+      def simulate_month(self):
+       units_sold = max(0, min(self.stock_level, self.estimated_monthly_units + random.randint(-10, 10))) 
+       self.total_units_manufactured += self.estimated_monthly_units
