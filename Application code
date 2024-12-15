@@ -78,6 +78,17 @@ def generate_statement(self):
     print("\nNet Profit/Loss:", net_profit) 
 class Application:
  def get_user_input(self, prompt, validation_func):
+   while True:
+        try:
+
+            value = validation_func(input(prompt))
+
+            return value
+
+        except ValueError as x:
+
+            print(x)
+            
    
 
 
