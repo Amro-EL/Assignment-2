@@ -89,28 +89,31 @@ class Application:
 
             print(x)
 def main(self):
-     print("Welcome to Product Stock Simulator")
-     product_code = self.get_user_input(
 
-        "Enter your Product Code (100-1000): ", 
+    print("WELCOME to Product Stock Simulator")
 
-        lambda x: int(x) if 100 <= int(x) <= 1000 else (_ for _ in ()).throw(ValueError("Invalid Product Code."))
+    product_code = self.get_user_input(
+
+        "Enter your Product Code(100-1000): ", 
+
+        lambda x: int(x) if 100<=int(x)<=1000 else (_ for _ in ()).throw(ValueError("invalid Product Code."))
 
     )
-product_name = input("Please Enter the Name of the Product: ")
 
-sale_price = self.get_user_input(
-    "Enter Sale Price : (more than zero) ",
+    product_name: str = input("Product Name : ")
 
-        lambda x: float(x) if float(x)>0 else (_ for _ in ()).throw(ValueError("Invalid Sale Price."))
+    sale_price = self.get_user_input(
+
+        "Enter your Sale Price(greater than 0): ",
+
+        lambda x: float(x) if float(x)>0 else (_ for _ in ()).throw(ValueError("invalid Sale Price."))
 
     )
 manufacture_cost = self.get_user_input(
+"Enter your Manufacture Cost(greater than 0): ",
 
-        "make the manufacture cost more than 0: ",
+        lambda x: float(x) if float(x)>0 else (_ for _ in ()).throw(ValueError("invalid Manufacture Cost."))
 
-        lambda x: float(x) if float(x) > 0 else (_ for _ in ()).throw(ValueError("Invalid Manufacture Cost."))
-)
-stock_level = self.get_user_input(
+    )
 
-        "What is the level of stock you would like to start with: ",
+
