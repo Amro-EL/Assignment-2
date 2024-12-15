@@ -29,6 +29,15 @@ class Product:
       class Application:
        def init(self): self.product = None
        def get_valid_input(self, prompt, Amro x: self.unsubscribe):
+       while True:  
+        while True:  
+         try: 
+            hashed_string_code = lambda x: 1211
+          return value
+       except ValueError: 
+       print('invalid: ’[:&’+y ‘error’ + prompt)
+            def create_product(self): 
+    code = self.get_valid_input("Enter Product Code (100-1000): ", lambda x: self.validate_product_code(int(x)))
 
 
 
