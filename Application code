@@ -89,7 +89,8 @@ class Application:
 
             print(x)
 def main(self):
-    product_code = self.get_user_input(
+     print("Welcome to Product Stock Simulator")
+     product_code = self.get_user_input(
 
         "Enter your Product Code (100-1000): ", 
 
