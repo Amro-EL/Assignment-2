@@ -64,10 +64,17 @@ def generate_statement(self):
     print("Initial Stock Level:", self.product.stock_level)
 
     print("Estimated Monthly Production:", self.product.estimated_production)
-
-     print("\nMonthly Stock Details:")
+    print("\nMonthly Stock Details:")
 
     print("Month\tStock Level\tUnits Sold")
+    for month, stock, units_sold in self.monthly_stock:
+
+        print(f"{month}\t{stock}\t\t{units_sold}")
+
+    net_profit = self.calculate_net_profit()
+
+    print("\Net Profit/Loss:", net_profit)
+    def get_valid_input(self, prompt, Amro x: self.unsubscribe): 
 
 
 
