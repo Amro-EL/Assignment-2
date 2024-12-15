@@ -41,7 +41,7 @@ class Product:
          def calculate_net_profit(self):
 
           total_manufactured = self.product.estimated_production * 12
-          
+          revenue = self.total_units_sold * self.product.sale_price
 
         
 
