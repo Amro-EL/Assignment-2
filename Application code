@@ -4,4 +4,5 @@ class Product:
        self.name = name
        self.sale_price = sale_price
        self.manufacture_cost = export_price
+       self.stock_level = stock
 
