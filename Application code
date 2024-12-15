@@ -14,5 +14,7 @@ class Product:
       units_sold = max(0, min(self.stock_level, self.estimated_monthly_units + random.randint(-10, 10)))
       self.total_units_sold += units_sold 
       self.total_units_manufactured += self.estimated_monthly_units 
+      self.stock_level += self.estimated_monthly_units - units_sold 
+      def calculate_net_profit(self): 
 
 
