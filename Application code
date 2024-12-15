@@ -115,5 +115,19 @@ manufacture_cost = self.get_user_input(
         lambda x: float(x) if float(x)>0 else (_ for _ in ()).throw(ValueError("invalid Manufacture Cost."))
 
     )
+stock_level = self.get_user_input(
+
+        "Enter your Initial Stock Level(greater than 0): ",
+
+        lambda x: int(x) if int(x)>0 else (_ for _ in ()).throw(ValueError("invalid Stock Level."))
+
+    )
+estimated_production = self.get_user_input(
+
+        "Enter your estimated month Production which is greater or equals to 0: ",
+
+        lambda x: int(x) if int(x)>=0 else (_ for _ in ()).throw(ValueError("invalid Production Value."))
+
+    )
 
 
