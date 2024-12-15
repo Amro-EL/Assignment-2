@@ -112,29 +112,4 @@ manufacture_cost = self.get_user_input(
 )
 stock_level = self.get_user_input(
 
-        "What was the level of stock you would like to start with: ",
-
-        lambda x: int(x) if int(x) > 0 else (_ for _ in ()).throw(ValueError("Invalid Stock Level."))
-    )
-
-estimated_production = self.get_user_input(
-
-        "How much do you plan to manufacture in a month this value should not be less than 0: ",
-
-        lambda x: int(x) if int(x) >=0 else_ (_ for _ in ()).throw(ValueError("Invalid Production Value."))
-
-    )
-product = Product(product_code, product_name, sale_price, manufacture_cost, stock_level, estimated_production)
-
-monthly_stock, total_amount_sold_units= product.simulate_monthly_stock()
-
-statement = PredictedStockStatement(product, monthly_stock, total_amount_sold_units)
-
-statement.generate_statement()
-
-
-   
-
-
-
-
+        "What is the level of stock you would like to start with: ",
