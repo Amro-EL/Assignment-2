@@ -42,6 +42,32 @@ class Product:
 
           total_manufactured = self.product.estimated_production * 12
           revenue = self.total_units_sold * self.product.sale_price
+          costs = total_manufactured * self.product.manufacture_cost
+    return revenue - costs
+
+def generate_statement(self):
+
+    print("\nPredicted Stock Statement")
+    return revenue - costs
+
+def generate_statement(self):
+
+    print("\nPredicted Stock Statement")
+    print("Product Code:", self.product.product_code)
+
+    print("Product Name:", self.product.product_name)
+
+    print("Sale Price:", self.product.sale_price)
+
+    print("Manufacture Cost:", self.product.manufacture_cost)
+
+    print("Initial Stock Level:", self.product.stock_level)
+
+    print("Estimated Monthly Production:", self.product.estimated_production)
+
+    print("\nMonthly Stock Details:")
+
+    print("Month\tStock Level\tUnits Sold")
 
         
 
