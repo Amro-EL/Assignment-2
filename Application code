@@ -21,7 +21,4 @@ class Product:
         statement = f"Product Code: {self.code}\n"
         def generate_stock_statement(self): 
          def generate_statement(self):
-          print("\nPredicted Stock Statement")
-          print("Product Code:", self.product.product_code)
-          print("Product Name:", self.product.product_name)
-          print("Sale Price:", self.product.sale_price)
+          
