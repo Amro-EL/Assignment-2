@@ -35,7 +35,14 @@ class Product:
         def __init__(self, product, monthly_stock, total_units_sold):
 
          self.product = product
-       
+         self.monthly_stock = monthly_stock
+
+         self.total_units_sold = total_units_sold
+         def calculate_net_profit(self):
+
+          total_manufactured = self.product.estimated_production * 12
+          
+
         
 
 
