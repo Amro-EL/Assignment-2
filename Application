@@ -1,0 +1,10 @@
+import random
+
+class Manufacturer:
+    def __init__(self):
+        self.estimated_monthly_units = 0
+        self.stock_level = 0
+    
+    def calculate_units_sold(self):
+        units_sold = max(0, min(self.stock_level, self.estimated_monthly_units + random.randint(-10, 10)))
+        return units_sold
