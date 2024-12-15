@@ -16,3 +16,5 @@ class Product:
        self.total_units_manufactured += self.estimated_monthly_units
        self.stock_level += self.estimated_monthly_units - units_sold
        def calculate_net_profit(self):
+        return (self.total_units_sold * self.sale_price) - (self.total_units_manufactured * self.manufacture_cost) 
+       
