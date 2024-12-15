@@ -98,6 +98,17 @@ def main(self):
     )
 product_name = input("Please Enter the Name of the Product: ")
 
+sale_price = self.get_user_input(
+    "Enter Sale Price : (more than zero) ",
+
+        lambda x: float(x) if float(x)>0 else (_ for _ in ()).throw(ValueError("Invalid Sale Price."))
+
+    )
+ manufacture_cost = self.get_user_input(
+
+        "make the manufacture cost more than 0: ",
+
+        lambda x: float(x) if float(x) > 0 else (_ for _ in ()).throw(ValueError("Invalid Manufacture Cost."))
 
 
 
